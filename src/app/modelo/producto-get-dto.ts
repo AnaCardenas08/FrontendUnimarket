@@ -8,7 +8,7 @@ export class ProductoGetDTO
     unidades: number = 20;
     precio: number = 15500;
     codigoUsuario: number = 1;
-    imagenes: string = "";
+    imagenes: string[];
     categoria: string = "";
   
     constructor(
@@ -32,7 +32,7 @@ export class ProductoGetDTO
       this.unidades = unidades;
       this.precio = precio;
       this.codigoUsuario = codigoUsuario;
-      this.imagenes = imagenes;
+      this.imagenes = []; 
       this.categoria = categoria;
     }
   }

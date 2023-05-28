@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
 import { ProductoGetDTO } from '../modelo/producto-get-dto';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { ProductoDTO } from '../modelo/producto-dto';
+import { MensajeDTO } from '../modelo/mensaje-dto';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +11,7 @@ import { ProductoGetDTO } from '../modelo/producto-get-dto';
 export class ProductoService {
   productos: ProductoGetDTO[];
 
-  constructor() {
+  constructor(private http: HttpClient) {
     this.productos = [];
 
     // Agregar productos al array de productos
@@ -118,4 +122,9 @@ export class ProductoService {
   public obtener(codigo: number): ProductoGetDTO | undefined {
     return this.productos.find(p => p.codigo == codigo);
   }
+
+  public crear(producto: ProductoDTO): Observable<MensajeDTO> {
+    return this.http.post<MensajeDTO>('https:localhost:8081/api/productos/crearProducto', producto);
+  }
+  
 }

@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { AuthService } from 'src/app/servicios/auth.service';
+import { TokenService } from 'src/app/servicios/token.service';
+import { Alerta } from 'src/app/modelo/alerta';
 
 @Component({
   selector: 'app-login',
@@ -7,6 +10,6 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent 
 {
-  
+ 
 
 }

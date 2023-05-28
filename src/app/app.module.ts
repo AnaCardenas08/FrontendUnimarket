@@ -12,7 +12,8 @@ import { CrearProductoComponent } from './pagina/crear-producto/crear-producto.c
 import { GestionProductosComponent } from './pagina/gestion-productos/gestion-productos.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CarritoComponent } from './pagina/carrito/carrito.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { AlertaComponent } from './pagina/alerta/alerta.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +23,17 @@ import { CarritoComponent } from './pagina/carrito/carrito.component';
     RegistroComponent,
     CrearProductoComponent,
     GestionProductosComponent,
-    CarritoComponent
+    CarritoComponent,
+    AlertaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
