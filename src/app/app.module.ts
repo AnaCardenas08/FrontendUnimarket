@@ -9,6 +9,10 @@ import { LoginComponent } from './pagina/login/login.component';
 import { RegistroComponent } from './pagina/registro/registro.component';
 import { FormsModule } from '@angular/forms';
 import { CrearProductoComponent } from './pagina/crear-producto/crear-producto.component';
+import { GestionProductosComponent } from './pagina/gestion-productos/gestion-productos.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CarritoComponent } from './pagina/carrito/carrito.component';
+
 
 @NgModule({
   declarations: [
@@ -16,12 +20,15 @@ import { CrearProductoComponent } from './pagina/crear-producto/crear-producto.c
     InicioComponent,
     LoginComponent,
     RegistroComponent,
-    CrearProductoComponent
+    CrearProductoComponent,
+    GestionProductosComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule, 
+    FormsModule,
+    ReactiveFormsModule,
     CommonModule
   ],
   providers: [],

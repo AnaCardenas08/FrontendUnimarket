@@ -7,4 +7,5 @@ export class ProductoDTO
     codigoUsuario:number = 1;
     categoria:string = "";
     disponibilidad:string = "";
+    
 }

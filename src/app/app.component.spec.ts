@@ -6,30 +6,30 @@ describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule // Importa el módulo RouterTestingModule para realizar pruebas de enrutamiento
       ],
       declarations: [
-        AppComponent
+        AppComponent // Declara el componente AppComponent para las pruebas
       ],
     }).compileComponents();
   });
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    const fixture = TestBed.createComponent(AppComponent); // Crea una instancia del componente AppComponent
+    const app = fixture.componentInstance; // Obtiene la instancia del componente
+    expect(app).toBeTruthy(); // Verifica que el componente se haya creado exitosamente
   });
 
   it(`should have as title 'my-app'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('my-app');
+    const fixture = TestBed.createComponent(AppComponent); // Crea una instancia del componente AppComponent
+    const app = fixture.componentInstance; // Obtiene la instancia del componente
+    expect(app.title).toEqual('my-app'); // Verifica que la propiedad 'title' del componente tenga el valor 'my-app'
   });
 
   it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('my-app app is running!');
+    const fixture = TestBed.createComponent(AppComponent); // Crea una instancia del componente AppComponent
+    fixture.detectChanges(); // Detecta los cambios en el componente
+    const compiled = fixture.nativeElement as HTMLElement; // Obtiene el elemento HTML del componente
+    expect(compiled.querySelector('.content span')?.textContent).toContain('my-app app is running!'); // Verifica que el elemento HTML contenga el texto 'my-app app is running!'
   });
 });

@@ -10,7 +10,6 @@
         <textarea name="descripcion" [(ngModel)]="producto.descripcion"></textarea>
     </div>
 
-
     <div>
         <label>Unidades: </label>
         <input type="number" name="unidades" [(ngModel)]="producto.unidades" required />
@@ -22,7 +21,7 @@
     </div>
 
     <div>
-        <label>Precio: </label>
+        <label>Código Usuario: </label>
         <input type="number" name="codigoUsuario" [(ngModel)]="producto.codigoUsuario" required />
     </div>
 
@@ -39,6 +38,8 @@
         <input type="file" name="imagenes" (change)="onFileChange($event)" multiple />
     </div>
 
-
-    <button type="submit" [disabled]="f.invalid">Crear nuevo producto</button>
+    <button type="submit" [disabled]="f.invalid" class="btn btn-primary">
+        <i class="fa-solid {{esEdicion ? 'fa-pencil' : 'fa-circle-plus'}} me-1"></i>
+        {{ esEdicion ? 'Editar' : 'Crear' }} Producto
+    </button>
 </form>

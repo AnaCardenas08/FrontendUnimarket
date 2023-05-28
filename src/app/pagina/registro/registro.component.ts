@@ -6,26 +6,31 @@ import { UsuarioDTO } from 'src/app/modelo/usuario-dto';
   templateUrl: './registro.component.html',
   styleUrls: ['./registro.component.css']
 })
-export class RegistroComponent 
-{
+export class RegistroComponent {
+  usuario: UsuarioDTO; // Objeto UsuarioDTO para almacenar los datos del usuario
 
-  usuario:UsuarioDTO;
-  
-  constructor()
-  {
+  /**
+   * Constructor de la clase RegistroComponent.
+   * Se inicializa el objeto usuario.
+   */
+  constructor() {
     this.usuario = new UsuarioDTO();
   }
 
-public registrar()
-{
-  console.log(this.usuario);
-  console.log()
-}
-
-public sonIguales():boolean
-  {
-  return this.usuario.password == this.usuario.confirmarPass;
+  /**
+   * Método para registrar el usuario.
+   * Muestra el objeto usuario en la consola.
+   */
+  public registrar() {
+    console.log(this.usuario);
+    // Puedes agregar aquí la lógica para enviar los datos del usuario al servidor
   }
-  
 
+  /**
+   * Método para verificar si las contraseñas coinciden.
+   * @returns true si las contraseñas coinciden, false en caso contrario
+   */
+  public sonIguales(): boolean {
+    return this.usuario.password == this.usuario.confirmarPass;
+  }
 }
