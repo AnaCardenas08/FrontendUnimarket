@@ -15,6 +15,7 @@ export class BusquedaComponent {
 
   /**
    * Constructor de la clase BusquedaComponent.
+   * Diego Alejandro Lopez 
    * @param route Módulo ActivatedRoute para acceder a la información de la ruta
    * @param productoServicio Servicio para obtener los productos
    */

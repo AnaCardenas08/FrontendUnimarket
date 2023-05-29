@@ -15,6 +15,7 @@ export class RegistroComponent {
 
   /**
    * Constructor de la clase RegistroComponent.
+   * Diego Alejandro Lopez 
    * Se inicializa el objeto usuario.
    */
   constructor(private authService:AuthService) {
@@ -39,7 +40,6 @@ export class RegistroComponent {
     });
     
     }
-    
     
   /**
    * Método para verificar si las contraseñas coinciden.

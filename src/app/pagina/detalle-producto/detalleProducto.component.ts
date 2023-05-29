@@ -13,6 +13,7 @@ export class DetalleProductoComponent {
 
   /**
    * Constructor del componente DetalleProductoComponent.
+   * Diego Alejandro Lopez 
    * @param route Objeto ActivatedRoute para obtener los parámetros de la URL.
    * @param carritoService Servicio del carrito para agregar productos.
    */

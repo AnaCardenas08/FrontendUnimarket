@@ -2,6 +2,7 @@ import { ProductoGetDTO } from "./producto-get-dto";
 
 /**
  * Clase que representa los datos de una compra.
+ * Diego Alejandro Lopez 
  */
 export class CompraDTO {
   codigoUsuario: number = 1; // Código del usuario asociado a la compra. Por defecto: 1
