@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+  }
+
+  .bg-smoke {
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 5px;
+    padding: 3px;
+    
+  }
+
+  .divv{
+    margin: 30px,0,30px,0;
+  }
+  
+  main {
+    background-color: rgba(255, 255, 255, 0.856);
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
+  }
+  

@@ -1,0 +1,33 @@
+
+
+  main{
+    background: linear-gradient(to bottom, #f0f0f0, #d8d8d8);
+  }
+
+
+  .login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-animated {
+    animation: pulse 1.5s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
